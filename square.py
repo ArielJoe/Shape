@@ -35,3 +35,23 @@ def starWindow(n):
                 print(end='  ')
         print()
     print()
+
+def rhombusWindow(n):
+    space = n - 2
+    star = 1
+    for i in range(n * 2 - 3):
+        for j in range(space):
+            print(end='  ')
+        for k in range(star):
+            if k == 0 or k == star - 1 or i == n - 2 or k == star // 2:
+                print(end='* ')
+            else:
+                print(end='  ')
+        if i < (n * 2 - 3) // 2:
+            space -= 1
+            star += 2
+        else:
+            space += 1
+            star -= 2
+        print()
+    print()

@@ -3,12 +3,13 @@ import triangle
 import hollow
 
 def main():
-    n = 5
+    n = int(input('size : '))
 
     square.starSquare(n)
     square.numberSquare(n)
     square.starFrame(n)
     square.starWindow(n)
+    square.rhombusWindow(n)
 
     triangle.pyramid(n)
     triangle.rTriangle(n)
